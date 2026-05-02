@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import { motion } from "framer-motion"; // Add animation to the few lines of the about section in App.js
+import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-wrapper">
+      {/* 1. Rename: Maniratnam Developers */}
+      <Navbar />
+      <Hero />
+      <Projects />
+      <div className="gold-divider"></div>
+      <About />
+      <div className="gold-divider"></div>
+      <Contact />
+      <Footer />
+
+      {/* <footer className="py-5 text-center border-top border-dark bg-black text-secondary">
+        <small>© 2026 Maniratnam Developers | Redefining real estate</small>
+      </footer> */}
     </div>
   );
 }
