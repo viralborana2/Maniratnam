@@ -1,17 +1,18 @@
 // src/components/Projects.jsx
 import React from "react";
 import { motion } from "framer-motion";
+import Heramba from "../assets/Heramba CHSL.png";
 
 // Update Data from Poster image_0.png
 const projects = [
     {
-        title: "Maniratnam Serene",
+        title: "Maniratnam Serene (Heramba CHSL)",
         loc: "Bhandup (E), Mumbai",
         desc: "Luxury 1 & 2 BHK | Launching Soon",
-        img: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800"
-    },
-    { title: "Azure Bay", loc: "Pune", desc: "Premium 3 BHK Residences", img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800" },
-    { title: "Royal Orchids", loc: "Ahmedabad", desc: "Exclusive Villas", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800" }
+        img: Heramba
+    }
+    // { title: "Azure Bay", loc: "Pune", desc: "Premium 3 BHK Residences", img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800" },
+    // { title: "Royal Orchids", loc: "Ahmedabad", desc: "Exclusive Villas", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800" }
 ];
 
 const Projects = () => (

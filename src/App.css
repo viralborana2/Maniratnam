@@ -144,11 +144,11 @@ h2 {
 
 .brand-text small {
   display: block;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-family: var(--font-sans);
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   color: #ffffff;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 /* Ensure navbar content is vertically centered */
@@ -296,10 +296,12 @@ h2 {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
+
 .project-card img {
-  height: 240px;
+  height: 350px; /* Increased from 240px to show more of the building */
   width: 100%;
   object-fit: cover;
+  object-position: top; /* Ensures the top of the building/logo stays visible */
   filter: brightness(0.9);
   transition: transform 0.6s ease;
 }
@@ -445,7 +447,7 @@ section {
 .footer-section {
   background-color: #02060d;
   /* Matches your twilight-blue-end */
-  padding-top: 80px;
+  padding-top: 40px;
   color: #ffffff;
   position: relative;
   overflow: hidden;
@@ -710,5 +712,57 @@ section {
 
   .nav-item:last-child .nav-link {
     border-bottom: none;
+  }
+}
+
+/* --- TEAM SECTION STYLES --- */
+.team-card {
+  /* A rich, solid dark color (Dark Navy/Charcoal). 
+     You can change this to #111111 for pure dark grey */
+  background-color: #0a192fb3 !important; 
+  border-color: var(--accent-gold, #c98e3e);
+  /* A subtle gold shadow on hover to make it feel premium */
+  box-shadow: 0 15px 35px rgba(201, 142, 62, 0.15); 
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Slightly stronger shadow for dark themes */
+}
+
+.team-card:hover {
+  transform: translateY(-12px);
+  border-color: var(--accent-gold, #c98e3e);
+  /* A subtle gold shadow on hover to make it feel premium */
+  box-shadow: 0 15px 35px rgba(201, 142, 62, 0.15); 
+}
+
+/* Changed to white so it's readable against the dark card */
+.team-card h4 {
+  color: #ffffff !important; 
+}
+
+/* Changed to a light silver/grey for readability */
+.team-card .text-secondary {
+  color: #cccccc !important; 
+  font-weight: 400;
+}
+
+/* Enhancing the icons inside the team card */
+.team-card .bi-person-circle {
+  background: rgba(201, 142, 62, 0.1);
+  border-radius: 50%;
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .team-card {
+    border-color: var(--accent-gold) !important;
+    /* Optional: If you also want the premium gold shadow to show by default on mobile, uncomment the line below */
+    /* box-shadow: 0 15px 35px rgba(201, 142, 62, 0.15); */
   }
 }

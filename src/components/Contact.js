@@ -7,7 +7,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const response = await fetch("https://formspree.io/f/mdayjpbw", {
+    const response = await fetch("https://formspree.io/f/mkoezlry", {
       method: "POST",
       body: formData,
       headers: { Accept: "application/json" },
@@ -23,7 +23,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-5">
-      <div className="container py-5">
+      <div className="container">
         <div className="row justify-content-center">
           
           <motion.div 
@@ -49,19 +49,20 @@ const Contact = () => {
               <div className="col-md-6">
                 <input type="tel" name="phone" className="form-control rounded-pill dark-form-input" placeholder="Phone Number*" required />
               </div>
-              <div className="col-md-6">
+              {/* <div className="col-md-6">
                 <input type="text" name="pincode" className="form-control rounded-pill dark-form-input" placeholder="Pincode*" required />
-              </div>
-              <div className="col-md-6">
+              </div> */}
+              <div className="col-md-12">
                 <select name="interest" className="form-select rounded-pill dark-form-input">
                   <option value="">Interested in?*</option>
+                  <option value="1bhk">1 BHK Apartment</option>
                   <option value="2bhk">2 BHK Apartment</option>
-                  <option value="3bhk">3 BHK Apartment</option>
+                  {/* <option value="3bhk">3 BHK Apartment</option> */}
                 </select>
               </div>
-              <div className="col-12">
+              {/* <div className="col-12">
                 <textarea name="message" className="form-control dark-form-input rounded-4" rows="4" placeholder="Your Message..."></textarea>
-              </div>
+              </div> */}
               
               <div className="col-12 text-center mt-5">
                 <button type="submit" className="pill-submit-btn mx-auto">

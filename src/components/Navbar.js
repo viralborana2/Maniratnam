@@ -25,7 +25,7 @@ const Navbar = () => {
             className="navbar-logo me-2"
           />
           <span className="brand-text">
-            MANIRATNAM <small>DEVELOPERS</small>
+            MANIRATNAM <small>INFINITY DEVELOPERS LPP</small>
           </span>
         </a>
         

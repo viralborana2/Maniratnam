@@ -5,9 +5,9 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import { motion } from "framer-motion"; // Add animation to the few lines of the about section in App.js
 import "./App.css";
 import Footer from "./components/Footer";
+import Team from "./components/Team";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
       <Projects />
       <div className="gold-divider"></div>
       <About />
+      {/* <Team /> */}
       <div className="gold-divider"></div>
       <Contact />
       <Footer />
